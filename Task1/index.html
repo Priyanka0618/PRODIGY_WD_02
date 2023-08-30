@@ -1,0 +1,57 @@
+ 	<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch App</title>
+  <style>
+ <h1>STOPWATCH</h1>
+{font-family: Arial, sans-serif;}
+body{background-color: lightblue;}
+  {text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.stopwatch {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="stopwatch">
+    <h1 id="display">00:00:00</h1>
+    <button id="startStop" onclick="startStop()">Start</button>
+    <button id="lap" onclick="lapTime()">Lap</button>
+    <button id="reset" onclick="resetStopwatch()">Reset</button>
+    <ul id="lapList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
